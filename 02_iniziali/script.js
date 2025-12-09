@@ -5,21 +5,18 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 function Iniziali(array){
-    let parolaIniziale = [];
+    const parolaIniziale = [];
 
-    for(let i = 0; i < array.lenght; i++){
+    for(let i = 0; i < array.length; i++){
         
-        const primaParola = array[i].charAt(0);
-
-        parolaIniziale.push(primaParola);
+        parolaIniziale.push(array[i].charAt(0));
     }
-    
+
     return parolaIniziale;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-let primaLettera = Iniziali(names);
-console.log(primaLettera);
+console.log(Iniziali(names));
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
